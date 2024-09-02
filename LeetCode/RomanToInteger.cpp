@@ -39,15 +39,3 @@ public:
         return ans;
     }
 };
-// "M", "CM",
-// "D","CD",
-// "C", "XC", 
-// "L", "XL", 
-// "X", "IX",
-// "V","IV"
-signed main() {
-    Solution hehe;
-    string s; cin >> s;
-    cout << hehe.romanToInt(s);
-}
-
