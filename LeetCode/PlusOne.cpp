@@ -17,12 +17,3 @@ public:
         return ans;
     }
 };
-
-signed main() {
-    Solution hehe;
-    vector<int> tmp = {1, 2, 3, 9};
-    vector<int> ans = hehe.plusOne(tmp);
-    for (auto x : ans) cout << x << ' ';
-    return 0;
-}
-
