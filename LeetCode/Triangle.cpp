@@ -22,15 +22,3 @@ public:
         return MagicBacktrack(triangle, dp, visited, 0, 0);
     }
 };
-
-signed main() {
-    Solution hehe;
-    vector<vector<int>> arr(4, vector<int>());
-    arr[0] = {2};
-    arr[1] = {3, 4};
-    arr[2] = {6, 5, 7};
-    arr[3] = {4, 1, 8, 3};
-    cout << hehe.minimumTotal(arr);
-    return 0;
-}
-
