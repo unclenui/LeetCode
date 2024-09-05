@@ -20,10 +20,3 @@ public:
         return false;
     }
 };
-
-signed main() {
-    Solution hehe;
-    vector<int> arr = {3,0,2,1,2};
-    cout << hehe.canReach(arr, 2);
-}
-
