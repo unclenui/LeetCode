@@ -42,19 +42,3 @@ public:
         return vuive((1<<n)-1,0);
     }
 };
-
-int n, m;
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<vector<int>> arr = {{3,4}, {4,5}, {5}};
-
-                            //   {{1,4,5,6,8,9,10,11,12,14,16,17,18,19,20},
-                            //    {1,2,7,8,11,14,18},
-                            //    {1,4,6,7,8,13,14,15,17,18,19},
-                            //    {1,4,5,6,7,8,10,12,14,15,17,18,19,20}};
-    cout << hehe.numberWays(arr);
-    return 0;
-}
-
