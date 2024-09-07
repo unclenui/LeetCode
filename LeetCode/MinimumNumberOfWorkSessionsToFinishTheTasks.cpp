@@ -25,16 +25,3 @@ public:
         return gietToiPls(sum, dp, sessionTime, (1<<n)-1);
     }
 };
-
-int k, n;
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    cin >> n >> k;
-    vector<int> a(n);
-    for (auto &x : a) cin >> x;
-    cout << hehe.minSessions(a, k);
-    return 0;
-}
-
