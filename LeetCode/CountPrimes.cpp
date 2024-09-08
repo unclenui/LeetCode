@@ -23,14 +23,3 @@ public:
         return nums;
     }
 };
-
-int n, k;
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> arr = {3,2,1,1,2,3};
-    cout << hehe.countPrimes(10);
-    return 0;
-}
-
