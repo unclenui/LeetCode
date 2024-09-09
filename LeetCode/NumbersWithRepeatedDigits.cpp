@@ -25,12 +25,3 @@ public:
         return magic(0, 0, 1, 1, 0);
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    int n; cin >> n;
-    cout << hehe.numDupDigitsAtMostN(n);
-    return 0;
-}
-
