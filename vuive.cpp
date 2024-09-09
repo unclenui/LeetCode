@@ -3,34 +3,56 @@ using namespace std;
 
 class Solution {
 private:
-    int nums = 0;
-    int prime[500000] = {};
-    bool not_prime[5000005];
-    void prime_sieve(int n) {
-        not_prime[0] = not_prime[1] = true;
-        for(int i = 2; i < n; i++) {
-            if (!not_prime[i] && (long long) i*i <= n) {
-                for (int j = i*i; j <= n; j += i) {
-                    not_prime[j] = true;
-                }
+    string key;
+    int dp[10][2][10];
+public:
+    
+
+    int magic(int i, bool tight, int cnt) {
+        if (i == key.size()) return cnt;
+        if (dp[i][tight][cnt] != -1) return dp[i][tight][cnt];
+        int ans = 0;
+        int en = tight ? key[i]-'0' : 9; 
+        for (int digit = 0; digit <= en; digit++) {
+            ans += magic(i+1, tight & (digit == en), cnt+(digit==1));
+        }
+        return dp[i][tight][cnt] = ans;
+    }
+
+    int brute(int n) {
+        int ans = 0;
+        for (int i = 1; i <= n; i++) {
+            int tmp = i;
+            while (tmp) {
+                ans += (tmp%10==1);
+                tmp/=10;
             }
-            if(!not_prime[i]) prime[nums++] = i;
+        }
+        return ans;
+    } 
+
+    int countDigitOne(int n) {
+        key = to_string(n);
+        memset(dp,-1,sizeof(dp));
+        return magic(0, 1, 0);
+    }
+
+    void debug() {
+        for (int i = 1; i <= 1000; i++) {
+            if (brute(i) != countDigitOne(i)) {
+                cout << brute(i) << " != " << countDigitOne(i) << " -> " <<  i << "\n";
+                break;
+            }
+            if (i==1000) cout << "correct\n";
         }
     }
-public:
-    int countPrimes(int n) {
-        prime_sieve(n);
-        return nums;
-    }
 };
-
-int n, k;
 
 signed main() {
     Solution hehe;
     freopen("input.inp","r", stdin);
-    vector<int> arr = {3,2,1,1,2,3};
-    cout << hehe.countPrimes(10);
+    int n; cin >> n;
+    hehe.debug();
     return 0;
 }
 
