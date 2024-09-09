@@ -23,13 +23,3 @@ public:
         return magic(digits, 0, 1, 1)-1;
     }
 };  
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    int n; cin >> n;
-    vector<string> r = {"1","3","5","7"};
-    cout << hehe.atMostNGivenDigitSet(r,n);
-    return 0;
-} 
-
