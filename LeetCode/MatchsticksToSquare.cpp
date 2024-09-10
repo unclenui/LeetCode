@@ -28,12 +28,3 @@ public:
         return magic(0, 0, n);
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> nums = {3,3,3,3,4};
-    cout << hehe.makesquare(nums);
-    return 0;
-} 
-
