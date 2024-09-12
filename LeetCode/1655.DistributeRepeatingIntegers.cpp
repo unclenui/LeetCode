@@ -36,13 +36,3 @@ public:
         return magic(0,0);
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> nums = {1,2,3,4};
-    vector<int> quantity = {2};
-    cout << hehe.canDistribute(nums, quantity);
-    return 0;
-} 
-
