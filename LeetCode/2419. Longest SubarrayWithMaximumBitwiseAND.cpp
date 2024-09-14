@@ -19,11 +19,3 @@ public:
         return max(ans, nums[nums.size()-1] == target ? cnt : 0);
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> nums = {7,3,16,15,1,13,1,2,14,5,3,10,6,2,7,15};
-    return 0;
-} 
-
