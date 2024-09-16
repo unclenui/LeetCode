@@ -29,14 +29,3 @@ public:
         return ans;
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> nums = {1,2,3,4,5};
-    return 0;
-} 
-//leetcodeisgreat
-//lEEtcOdEIsgrEAt
-//EEOEIEA
-

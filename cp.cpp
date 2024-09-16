@@ -8,5 +8,13 @@ using namespace std;
 
 signed main() {
     freopen("input.inp", "r", stdin);
+    cout << bitset<10>('A') << '\n';
+    cout << bitset<10>('a') << '\n';
+    cout << bitset<10>('e') << '\n';
+    cout << bitset<10>('i') << '\n';
+    cout << bitset<10>('o') << '\n';
+    cout << bitset<10>('u') << '\n';
     
+    cout << '\n';
+
 }
