@@ -1,20 +1,15 @@
-#include<bits/stdc++.h>
-#define ll long long
-#define FOR(i, a, b) for (int i = a; i <= b; i++)
-#define ROF(i, b, a) for (int i = b; i >= a; i--)
-#define all(x) (x.begin(), x.end())
+#include <bits/stdc++.h>
 
 using namespace std;
 
-signed main() {
-    freopen("input.inp", "r", stdin);
-    cout << bitset<10>('A') << '\n';
-    cout << bitset<10>('a') << '\n';
-    cout << bitset<10>('e') << '\n';
-    cout << bitset<10>('i') << '\n';
-    cout << bitset<10>('o') << '\n';
-    cout << bitset<10>('u') << '\n';
-    
-    cout << '\n';
-
+int main() {
+    freopen("input.inp","r",stdin);
+    int n;
+    long long s;
+    cin >> n;
+    for (s = 1; n > 0; n--) {
+        if (n == 3) cout << s << '\n';
+        s *= n;
+        if (n == 3) cout << s << '\n';
+    }
 }

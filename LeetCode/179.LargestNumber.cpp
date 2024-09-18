@@ -21,12 +21,3 @@ public:
         return ans[0]=='0'? "0" : ans;
     }
 };
-
-signed main() {
-    Solution hehe;
-    freopen("input.inp","r", stdin);
-    vector<int> nums = {432,43243};
-    cout << hehe.largestNumber(nums);
-    return 0;
-} 
-
